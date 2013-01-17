@@ -1,0 +1,7 @@
+_home_page:
+    pattern:  /
+    defaults: { _controller: AkkornFrameworkBundle:HomePage:index }
+
+_contact_page:
+    pattern:  /contact/
+    defaults: { _controller: AkkornFrameworkBundle:ContactPage:index }

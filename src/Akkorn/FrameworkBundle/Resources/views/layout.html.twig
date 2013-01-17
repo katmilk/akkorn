@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9 " lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Framework Bundle{% endblock %}</title>
+    <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/akkornframework/css/global.css') }}" />
+</head>
+<body>
+    <div id="global-wrapper">
+        
+        <div id="global-hat">
+            {% include 'AkkornFrameworkBundle:Partials:global-hat.html.twig' %}
+        </div>
+
+        <div id="global-header">
+            {% include 'AkkornFrameworkBundle:Partials:global-header.html.twig' %}
+        </div>
+
+        <div id="global-container">
+            {% block content %}{% endblock %}
+        </div>
+
+        <div id="global-footer">
+            {% include 'AkkornFrameworkBundle:Partials:global-footer.html.twig' %}
+        </div>
+
+    </div>
+    {% if code is defined %}
+        <h2>Code behind this page</h2>
+        <div class="symfony-content">{{ code|raw }}</div>
+    {% endif %}
+
+    {#
+    <!-- JavaScript at the bottom for fast page loading -->
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery-1.8.2.min.js"></script>
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery-ui-1.8.23.custom.min.js"></script>
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery.ui.datepicker-en-GB.js"></script>
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery.ui.datepicker-zh-CN.js"></script>
+
+    <!-- Plugins/Libraries -->
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery.ba-outside-events.min.js"></script>
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery.touchSwipe.min.js"></script>
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery.carouFredSel-6.0.5-packed.js"></script>
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery.dropkick-1.0.0.js"></script>
+    
+    <!-- Minimized Scripts -->
+    <script src="{{ app.request.basepath }}/assets/js/plugins.js"></script>
+    <script src="{{ app.request.basepath }}/assets/js/script.js"></script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-xxx-x']);
+      _gaq.push(['_setDomainName', '']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    #}
+</body>
+</html>

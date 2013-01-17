@@ -1,0 +1,22 @@
+{% extends 'AkkornFrameworkBundle::layout.html.twig' %}
+
+{% block title %}Akkorn - Contact{% endblock %}
+
+{% block content_header '' %}
+
+{% block content %}
+
+    <h1>Contact Page</h1>
+
+    {% include 'AkkornFrameworkBundle:Partials:mainnav.html.twig' %}
+
+    <div class="symfony-blocks-welcome">
+        <div class="block-demo">
+            {% set navitem = 'nav-item goes here' %}
+            {% include 'AkkornFrameworkBundle:Partials:sidenav.html.twig' with {'navitem': navitem} %}
+        </div>
+    </div>
+
+    {% include 'AkkornFrameworkBundle:Partials:mainfooter.html.twig' %}
+
+{% endblock %}

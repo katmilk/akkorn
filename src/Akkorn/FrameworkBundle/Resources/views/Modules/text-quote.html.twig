@@ -1,0 +1,12 @@
+<div {% if module_id is not empty %}id="{{ module_id }}"{% endif %} class="module text-quote {% if module_class is not empty %} {{ module_class }}{% endif %}">
+	<div class="mod-inner">
+		<blockquote>
+			{% if module.text is defined %}
+				{{ module.text|raw }}
+			{% endif %}
+			{% if module.source is defined %}
+				<span>&mdash; {{ module.source }}</span>
+			{% endif %}
+		</blockquote>
+	</div>
+</div>

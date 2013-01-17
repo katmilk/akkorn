@@ -1,0 +1,47 @@
+{% extends 'AkkornFrameworkBundle::layout.html.twig' %}
+
+{% block title %}Akkorn - Homepage{% endblock %}
+
+{#
+{% block content_header %} Content Header {{ parent() }} 
+{% endblock %}
+{% block content_header_more %}
+    testing block
+    {{ parent() }}
+{% endblock %}
+#}
+
+{# Set Content to be pulled from DB #}
+{% set module_title = 'Hello!' %}
+{% set module_subtitle = 'Take a moment to browse around.' %}
+{% set navitem = 'nav-item goes here' %}
+
+{% block content %}
+
+    {% include 'AkkornFrameworkBundle:Modules:text-title.html.twig' with { 'module_id':'', 'module_class':'', 'module_title':module_title }  %}
+    
+    {% include 'AkkornFrameworkBundle:Modules:text-subtitle.html.twig' with { 'module_id':'', 'module_class':'', 'module_subtitle':module_subtitle } %}
+    
+    {% include 'AkkornFrameworkBundle:Modules:text-divider.html.twig' with { 'module_id':'', 'module_class':'' } %}
+
+    {% include 'AkkornFrameworkBundle:Modules:text-body.html.twig' with { 'module_id':'', 'module_class':'', 'layout':'', 'title':'title', 'subtitle':'subtitle', 'text':'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>' } %}
+    
+    {% include 'AkkornFrameworkBundle:Modules:text-divider.html.twig' with { 'module_id':'', 'module_class':'' } %}
+    
+    {% include 'AkkornFrameworkBundle:Modules:text-body.html.twig' with { 'module_id':'', 'module_class':'', 'layout':'1', 'title':'title', 'subtitle':'subtitle', 'text':'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>' } %}
+
+    {% include 'AkkornFrameworkBundle:Modules:text-divider.html.twig' with { 'module_id':'', 'module_class':'' } %}
+
+    {% include 'AkkornFrameworkBundle:Modules:text-title.html.twig' with { 'module_id':'', 'module_class':'', 'module_title':'Module title here' } %}
+    {% include 'AkkornFrameworkBundle:Modules:text-subtitle.html.twig' with { 'module_id':'', 'module_class':'', 'module_subtitle':'Module subtitle goes here' }  %}
+
+{% endblock %}
+
+
+{% block side_content %}
+    <div class="symfony-blocks-welcome">
+        <div class="block-demo">
+            {% include 'AkkornFrameworkBundle:Partials:sidenav.html.twig' with { 'navitem':navitem } %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,7 @@
+<div {% if module_id is not empty %}id="{{ module_id }}"{% endif %} class="module text-title {% if module_class is not empty %} {{ module_class }}{% endif %}">
+	<div class="mod-inner">
+		{% if module_title is not empty %}
+		<h2>{{ module_title }}</h2>
+		{% endif %}
+	</div>
+</div>

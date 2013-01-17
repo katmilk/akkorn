@@ -1,0 +1,57 @@
+<div {% if module_id is not empty %}id="{{ module_id }}"{% endif %} class="module text-body{% if module_class is not empty %} {{ module_class }}{% endif %}">
+	{% if layout is empty  %}
+	<div class="mod-inner">
+		<div class="copy-container">
+			{% if title is defined %}
+				<h2>{{ title }}</h2>
+			{% endif %}
+
+			{% if subtitle is defined %}
+				<h3>{{ subtitle }}</h3>
+			{% endif %}
+
+			{% if text is defined %}
+				{{ text|raw }}
+			{% endif %}
+
+			{% if module.columns is defined %}
+				<ul>
+				{% for column in module.columns %}
+					{% if column.text is defined %}
+						<li>{{column.text|raw}}</li>
+					{% endif %}
+				{% endfor %}
+				</ul>
+			{% endif %}
+		</div>
+	</div>
+	{% endif %}
+
+	{# Variant layout where the caption is above the title #}
+	{% if layout is not empty and layout == "1" %}
+	<div class="mod-inner">
+		<div class="copy-container">
+			{% if subtitle is defined %}
+				<h3>{{ subtitle|raw }}</h3>
+			{% endif %}
+			{% if title is defined %}
+				<h2>{{ title|raw }}</h2>
+			{% endif %}
+
+			{% if text is defined %}
+				{{ text|raw }}
+			{% endif %}
+
+			{% if module.columns is defined %}
+				<ul>
+				{% for column in module.columns %}
+					{% if column.text is defined %}
+						<li>{{column.text|raw}}</li>
+					{% endif %}
+				{% endfor %}
+				</ul>
+			{% endif %}
+		</div>
+	</div>
+	{% endif %}
+</div>

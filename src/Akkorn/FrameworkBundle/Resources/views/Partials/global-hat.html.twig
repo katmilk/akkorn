@@ -1,0 +1,24 @@
+{% block content %}
+<div class="inner">
+	<div id="user-menu">
+		<ul>
+			{% if logged_in is defined %}
+			<li><a href="" title="">My Account</a></li>
+			<li><a href="" title="">My Profile</a></li>
+			<li><a href="" title="">Logout</a></li>
+			{% else %}
+			<li><a href="" title="">Login</a></li>
+			<li><a href="" title="">Signup</a></li>
+			{% endif %}
+		</ul>
+	</div>
+	<div id="social-menu">
+		<ul>
+			<li><a href="" title="">Facebook</a></li>
+			<li><a href="" title="">Twitter</a></li>
+			<li><a href="" title="">YouTube</a></li>
+			<li><a href="" title="">Instagram</a></li>
+		</ul>
+	</div>
+</div>
+{% endblock %}

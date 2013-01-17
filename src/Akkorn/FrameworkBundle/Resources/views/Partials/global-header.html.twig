@@ -1,0 +1,27 @@
+{% block content %}
+<div class="inner">
+	<div id="branding">
+	    <h1><a href="{{ path('_home_page') }}" title="ROKKAN AKKORN FRAMEWORK">ROKKAN AKKORN FRAMEWORK</a></h1>
+	</div>
+
+	<div id="global-search">
+		<form method="GET" action="http://google.com/search">
+	        <div class="fieldset text-set">
+	        	<input id="global-search-field" type="search" name="q" placeholder="Help me find..." />
+	        </div>
+	        <div class="form-btns">
+        		<input type="submit" class="btn" value="Search" />
+        	</div>
+	    </form>
+	</div>
+
+	<nav id="navigation">
+		{% set currentPage = app.request.attributes.get('_route') %}
+	    <ul>
+	    	<li><a {% if currentPage == '_home_page' %}class="current"{% endif %} href="{{ path('_home_page') }}">Home</a></li>
+	    	<li><a {% if currentPage == '_contact_page' %}class="current"{% endif %} href="{{ path('_contact_page') }}">Contact</a></li>
+	    	<li class="last"><a {% if currentPage == '_third_page' %}class="current"{% endif %} href="">Item 3</a></li>
+	    </ul>
+	</nav>
+</div>
+{% endblock %}

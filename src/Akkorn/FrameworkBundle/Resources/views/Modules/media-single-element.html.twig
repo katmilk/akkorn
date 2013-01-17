@@ -1,0 +1,14 @@
+<div id="{{ module_id }}" class="module {{ module_class }}">
+	<div class="mod-inner">
+		{% if module.img is defined %}
+			<div class="img-container">
+				<img src="{{module.img}}">
+			</div>
+		{% endif %}
+		{% if module.text is defined %}
+			<div class="copy-container">
+				{{module.text|raw}}
+			</div>
+		{% endif %}
+	</div>
+</div>
