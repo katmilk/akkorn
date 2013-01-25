@@ -1,0 +1,43 @@
+/* Default - Global Variables
+ * --------------------------------------------------------- */
+$site-width: 910px;
+$col-gutter: 15px;
+
+/* BG images */
+$solid-divider: '../img/ui/solid-divider.png';
+$dotted-divider: '../img/ui/dashed-divider.png';
+$fancy-divider: '../img/ui/fancy-divider.png';
+
+/* Default colors */
+$background-color: #f5f5f5;
+$global-nav-color: #f0f0f0;
+$contact-info-footer-color: #ececec;
+$headline-color: #000000;
+$subtitle-color: #888888;
+$body-text-color: #333333;
+$link-color: #b2baba;
+$link-hover-color: #555555;
+$tab-gradient-top-color:#3a393c;
+$tab-gradient-bottom-color: #1f1e20;
+$tab-gradient-top-active-color:#3a393c;
+$tab-gradient-bottom-active-color: #1f1e20;
+$sales-gradient-top: #000;
+$sales-gradient-bottom: #222;
+$sales-btn-top-color: #000;
+$sales-btn-bottom-color: #222;
+
+$footer-color: #06060a;
+$strong-color: #333333;
+$border-color: #e9e9e9;
+
+/* Fonts */
+$serif: Georgia, "Times New Roman", Times, serif;
+$sans-serif: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$helvetica: "helveticaneuelt_std_lt_cnRg", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$helvetica-thin: "helveticaneuelt_std_thin_cnRg", "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$helvetica-med: "helveticaneuelt_std_med_cnRg", "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+
+/* CSS3 Properties */
+/* Border Radius */
+$default-border-radius: 10px;

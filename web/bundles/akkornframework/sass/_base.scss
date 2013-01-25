@@ -1,0 +1,1000 @@
+/* -------------------------------------------------------------------------- *
+   RKN - AKKORN BASE Styles
+   * Combination of Boilerplate HTML5 and custom RKN Styles
+   * Creates a base of styles to build upon
+
+   * RKN - AKKORN Framework
+   * Copyright - 2013.ROKKAN
+   * License - MIT or GPL
+ * -------------------------------------------------------------------------- */
+
+
+/*! normalize.css v1.0.2 | MIT License | git.io/normalize */
+/* ========================================================================== *
+ * HTML5 display definitions
+ * ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+    display: none;
+}
+
+/* -------------------------------------------------------------------------- *
+   Base
+ * -------------------------------------------------------------------------- */
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+body {
+    margin: 0;
+}
+
+/* -------------------------------------------------------------------------- *
+   Links
+ * -------------------------------------------------------------------------- */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* -------------------------------------------------------------------------- *
+   Typography
+ * -------------------------------------------------------------------------- */
+/*
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+b,
+strong {
+    font-weight: bold;
+}
+blockquote {
+    margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+p,
+pre {
+    margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+q {
+    quotes: none;
+}
+
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+small {
+    font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+
+/* -------------------------------------------------------------------------- *
+   Lists
+ * -------------------------------------------------------------------------- */
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+dt {
+	font-weight: 700;
+}
+dd {
+    margin: 0 0 0 40px;
+}
+ul {
+	list-style-type: disc;
+}
+ol {
+	list-style-type: decimal;
+}
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+
+/* -------------------------------------------------------------------------- *
+   Embedded content
+ * -------------------------------------------------------------------------- */
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* -------------------------------------------------------------------------- *
+   Figures
+ * -------------------------------------------------------------------------- */
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+    margin: 0;
+}
+
+/* -------------------------------------------------------------------------- *
+   Forms
+ * -------------------------------------------------------------------------- */
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+form {
+    margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+    line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* -------------------------------------------------------------------------- *
+   Tables
+ * -------------------------------------------------------------------------- */
+/*
+ * Remove most spacing between table cells.
+ */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* ========================================================================== *
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ * ========================================================================== */
+
+/* -------------------------------------------------------------------------- *
+   Base styles: opinionated defaults
+ * -------------------------------------------------------------------------- */
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+    background: #0cf;
+    text-shadow: none;
+}
+::selection {
+    background: #0cf;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+    resize: vertical;
+}
+
+/* -------------------------------------------------------------------------- *
+   Chrome Frame prompt
+ * -------------------------------------------------------------------------- */
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ========================================================================== *
+ * RKN - AKKORN Default Styles
+ * Sets up some default frequently used styles
+ * ========================================================================== */
+
+/* -------------------------------------------------------------------------- *
+   Text elements
+ * -------------------------------------------------------------------------- */
+p img.left  {float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0;}
+p img.right {float: right; margin: 1.5em 0 1.5em 1.5em;}
+
+a, a:link, a:visited {
+	color:#0cf; 
+	text-decoration: none;
+}
+a:hover, code, pre {
+	color:#f09;
+}
+a:active, a:focus {
+	color:#000;
+}
+
+blockquote  {color: #666; font-style: italic;}
+blockquote *:first-child:before {content: "\201C"; font-size: 1.2em; color: #666;}
+blockquote *:first-child:after {content: "\201D"; font-size: inherit; color: #666;}
+strong      {font-weight: 700;}
+em,dfn      {font-style: italic;}
+dfn         {font-weight: 700;}
+sup, sub    {line-height: 0;}
+
+abbr, acronym {border-bottom: 1px dotted #666;}
+address {margin: 0 0 1.5em; font-style: italic;}
+del {color:#666;}
+
+pre {margin: 1.5em 0; white-space: pre;}
+pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5;}
+
+
+/* -------------------------------------------------------------------------- *
+   Tables
+ * -------------------------------------------------------------------------- */
+table       {width:100%;}
+th          {font-weight: 700;}
+thead th 	{background: #c3d9ff;}
+th,td,caption {padding: 4px 10px 4px 5px;}
+tr.odd td  {background: #f0f0f0;}
+tr.even td  {background: #e5ecf9;}
+tfoot       {font-style: italic;}
+caption     {background: #eee;}
+
+
+/* -------------------------------------------------------------------------- *
+   Form Styles
+   * Sets up some default styling for forms
+   * Gives you classes to enhance your forms
+ * -------------------------------------------------------------------------- */
+
+/* Form Fields
+ * -------------------------------------------------------------------------- */
+label       {font-weight: 700;}
+fieldset    {padding:1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc;}
+legend      {font-weight: bold; font-size:1.2em;}
+
+input[type=text], input[type=password],
+input.text, input.title, 
+textarea, select { 
+  background-color:#fff; 
+  border:1px solid #bbb; 
+}
+input[type=text]:focus, input[type=password]:focus, 
+input.text:focus, input.title:focus, 
+textarea:focus, select:focus { 
+  border-color:#666; 
+}
+input[type=text], input[type=password],
+input.text, input.title,
+textarea, select {
+  margin:0.5em 0;
+}
+
+input.text, input.title   {width: 300px; padding:5px;}
+input.title   {font-size:1.5em;}
+textarea      {width: 390px; height: 250px; padding:5px;}
+
+input[type=checkbox], input[type=radio], input.checkbox, input.radio {position:relative; top:.25em;}
+
+form.inline 	{line-height:3;}
+form.inline p	{margin-bottom:0;}
+
+
+/* Success, Notice and Error boxes
+ * -------------------------------------------------------------------------- */
+.error-box, .notice-box, .success-box    {padding: .8em; margin-bottom: 1em; border: 2px solid #ddd;}
+.error-box      {background: #FBE3E4; color: #8a1f11; border-color: #FBC2C4;}
+.notice-box     {background: #FFF6BF; color: #514721; border-color: #FFD324;}
+.success-box    {background: #E6EFC2; color: #264409; border-color: #C6D880;}
+.error-box a    {color: #8a1f11;}
+.notice-box a   {color: #514721;}
+.success-box a  {color: #264409;}
+
+.checkbox,
+.radio {
+	display: block;
+	clear: left; float: left;
+	width: 15px; height: 15px;
+	margin: 0 6px 0 0; padding: 0;
+
+}
+.checkbox {
+	/*background: url(../../html/imgs/icons/checkbox.gif) no-repeat;*/
+}
+.radio {
+	/*background: url(../../html/imgs/icons/radio.gif) no-repeat;*/
+}
+.select {
+	position: absolute;
+	border: #111 none;
+	width: 400px; /* With the padding included, the width is the actual width of the image. */
+	height: 31px;
+	padding: 0 0 0 10px;
+	color: #969696;
+	font-weight: 700;
+	font: 12px/21px arial,sans-serif;
+	background: url() no-repeat 0 0;
+	overflow: hidden;
+}
+
+
+/* Fieldset Class
+ * -------------------------------------------------------------------------- */
+.fieldset 	{
+	clear: both; float: left;
+}
+.fieldset label {
+	float: left; 
+	margin-right: 10px;
+	padding: 0;
+	text-align: right; 
+	width: 10%;
+}
+.fieldset input, 
+.fieldset textarea, 
+.fieldset select {
+	color: #222;
+	font-size: 12px;
+	float: left;
+	margin: 0;
+}
+.fieldset input, 
+.fieldset textarea {
+	padding: 5px 10px 4px;
+}
+
+.fieldset.error {background: url(../imgs/form_error_icon.png) no-repeat right center;}
+.fieldset.error input {border: 2px solid #e90000; color: #e90000;}
+
+.fieldset.text-set label {padding: 5px 0 0;}
+.fieldset.radio-set label {padding: 2px 0 0;}
+.fieldset.checkbox-set label {padding: 2px 0 0;}
+.fieldset.select-set label {padding: 4px 0 0;}
+.fieldset.textarea-set label {padding: 2px 0 0;}
+.fieldset.terms-set label {
+	font-weight: 400;
+	margin: 0; 
+	padding: 4px 0 0; 
+	text-align: left; 
+	width: auto;
+}
+.fieldset.terms-set input {margin-right: 10px; padding: 0;}
+.fieldset.radio-set input, .fieldset.checkbox input {padding: 0;}
+
+
+/* Form-Btns
+ * -------------------------------------------------------------------------- */
+.form-btns {clear: both; float: left;}
+.form-btns a.btn, .form-btns input {
+	background: none;
+	color: #3366CC;
+	display: block;
+	border: #fff none;
+	font-size: 12px;
+	float: left;
+	margin: 0; padding: 0;
+	text-align: center;
+	text-decoration: none;
+}
+.form-btns a:hover.btn, .form-btns input:hover {
+	color: #c33;
+	text-decoration: underline;
+}
+
+
+/* -------------------------------------------------------------------------- *
+   Helper classes
+ * -------------------------------------------------------------------------- */
+/*
+ * Image replacement
+ */
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Move offscreen, visually hidden but available for screenreaders
+ */
+.offscreen {
+	position: absolute; 
+	left: -9999em; 
+	overflow: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+
+/* 
+ * Add color to elements to bring visual focus
+ */
+.quiet {
+	color: #666!important;
+}
+.loud {
+	color: #000!important;
+}
+.highlight {
+	background:#ff0!important;
+}
+.added {
+	background:#060!important;
+	color: #fff!important;
+}
+.removed {
+	background:#900!important; 
+	color: #fff!important;
+}
+
+/*
+ * Remove margins according to location
+ */
+.first      { margin-left:0!important; padding-left:0!important; }
+.last       { margin-right:0!important; padding-right:0!important; }
+.top        { margin-top:0!important; padding-top:0!important; }
+.bottom     { margin-bottom:0!important; padding-bottom:0!important; }
+
+
+/* Use a .box to create a padded box inside a column/content area */ 
+/*.box {padding: 1.5em; margin-bottom: 1.5em; background: #E5ECF9;}*/
+
+
+/* Use this to create a horizontal ruler across a column. */
+.hr-dotted hr, .hr-solid hr {
+	display: none; 
+	position: absolute; 
+	left: -9999em; 
+	overflow: hidden;
+}
+.hr-dotted,
+.hr-solid,
+.hr-fancy {
+	clear: both;
+	float: left;
+	height: 1px;
+	margin: 1em 0;
+	width: 100%;
+}
+
+/* Used image to create a custom dotted horizontal rule */
+.hr-dotted {
+	/*background: url(../path/to/hr-image) repeat-x 0 0;*/
+}
+
+/* Used image to create a custom solid horizontal rule */
+.hr-solid {
+	/*background: url(../path/to/hr-image) repeat-x 0 0;*/
+}
+
+/* Used image to create a custom fancy horizontal rule */
+.hr-fancy {
+	/*background: url(../path/to/hr-image) repeat-x 0 0;*/
+}
+
+
+
+/* -------------------------------------------------------------------------- *
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+ * -------------------------------------------------------------------------- */
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* -------------------------------------------------------------------------- *
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+ * -------------------------------------------------------------------------- */
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* End CSS */

@@ -1,0 +1,10 @@
+/* Sprite for Icons */
+//$icons-sprite: sprite-map("icons/*.png", $spacing: 20px);
+
+/* Sprite for Buttons Items */
+//$btns-sprite: sprite-map("btns/*.png", $position: 100%, $spacing: 20px);
+
+
+/* Sprite for Utility Items */
+@import "utility/*.png";
+@include all-utility-sprites;
